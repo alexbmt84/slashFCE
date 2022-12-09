@@ -1,0 +1,36 @@
+{
+    "metiers": [
+        {
+            "id_metier": "16",
+            "nom": "Coaching",
+            "couleur": "#C0E3F4",
+            "icone": "uploads\/unnamed.png",
+            "id_utilisateur": "3",
+            "id_sphere": "1"
+        },
+        {
+            "id_metier": "18",
+            "nom": "Jeux vidéos",
+            "couleur": "#B0DBCF",
+            "icone": "uploads\/index.png",
+            "id_utilisateur": "3",
+            "id_sphere": "2"
+        },
+        {
+            "id_metier": "19",
+            "nom": "Développeur web",
+            "couleur": "#848484",
+            "icone": "",
+            "id_utilisateur": "3",
+            "id_sphere": "1"
+        },
+        {
+            "id_metier": "24",
+            "nom": "Codeur",
+            "couleur": "#2D2D2D",
+            "icone": "",
+            "id_utilisateur": "3",
+            "id_sphere": "1"
+        }
+    ]
+}

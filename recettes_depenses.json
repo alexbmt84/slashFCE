@@ -1,0 +1,39 @@
+{
+    "recettesDepenses": [
+        {
+            "id_recette": "18",
+            "recette": "150",
+            "depense": "20",
+            "evenement_id": "8",
+            "id_utilisateur": "3"
+        },
+        {
+            "id_recette": "19",
+            "recette": "500",
+            "depense": "200",
+            "evenement_id": "9",
+            "id_utilisateur": "3"
+        },
+        {
+            "id_recette": "20",
+            "recette": "200",
+            "depense": "100",
+            "evenement_id": "8",
+            "id_utilisateur": "3"
+        },
+        {
+            "id_recette": "21",
+            "recette": "60",
+            "depense": "150",
+            "evenement_id": "9",
+            "id_utilisateur": "3"
+        },
+        {
+            "id_recette": "22",
+            "recette": "0",
+            "depense": "400",
+            "evenement_id": "10",
+            "id_utilisateur": "3"
+        }
+    ]
+}
