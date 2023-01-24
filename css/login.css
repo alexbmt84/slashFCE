@@ -1,0 +1,213 @@
+@import url(format.css);
+
+*{
+     transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+body {
+    background: radial-gradient(#ffff55, #FF8823);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formBox {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 350px;
+    height: 500px;
+    background: none;
+    transform-style: preserve-3d;
+    scale: 0.8;
+}
+
+.box div {
+    background-color: #f2eacc;
+    margin-top: 30px;
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    box-shadow: 0px 0px 5px #C39D78, 0px 0px 30px #C39D78,
+    inset 0px 0px 5px #C39D78, 0px 0px 30px #C39D78;  
+}
+
+/*position des faces*/
+
+.top{
+    width: 350px;
+    height: 350px!important;
+}
+.front {
+    transform: rotateY(0deg) translateZ(175px);
+}
+.right {
+    transform: rotateY(90deg) translateZ(175px);
+}
+.back {
+    transform: rotateY(180deg) translateZ(175px);
+}
+.left {
+    transform: rotateY(270deg) translateZ(175px);
+}
+.top {
+    transform: rotateX(90deg) translateZ(175px);
+}
+
+/*fin position des faces*/
+
+/*style des faces*/
+
+.front,
+.right,
+.left {
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 35%;
+    margin-bottom: 20px;
+}
+
+.icons {
+    width: 50%;
+}
+
+p {
+    margin: 5px 5px 10px 0;
+    font-size: 18px;
+}
+
+/*fin de style de la face front*/
+
+/*style generale des formulaires*/
+
+h2 {
+    margin: 20px 0;    
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.btn {
+    background-color: #FC4A50 !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+.frm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.frm input, button {
+    width: 280px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+button :first-child {
+    color: #fff;
+    display: block;
+    cursor: pointer;
+}
+
+.text:focus {
+    background: #FF8823;
+}
+
+#btm {
+    position: absolute;
+    bottom: 15px;
+    font-size: 18px;
+    color: #FC4A50;
+    text-align: center;
+    cursor: pointer;
+}
+
+#btm2 {
+    position: absolute;
+    left: 205px;
+    font-size: 18px;
+    color: #FC4A50;
+    text-align: center;
+    cursor: pointer;
+    top: 370px;
+}
+
+a {
+    display: none;
+}
+
+span {
+    color: black;
+}
+
+/*fais tourner la forme 3D*/
+#chk1:checked ~ .box {
+    transform: rotateY(-90deg);
+}
+
+#chk2:checked ~ .box {
+    transform: rotateY(0deg);
+}
+
+#chk3:checked ~ .box {
+    transform: rotateY(90deg);
+}
+
+
+@media (min-width: 768px) {
+    .front {
+        transform: rotateY(0deg) translateZ(150px);
+    }
+    .right {
+        transform: rotateY(90deg) translateZ(150px);
+    }
+    .back {
+        transform: rotateY(180deg) translateZ(150px);
+    }
+    .left {
+        transform: rotateY(270deg) translateZ(150px);
+    }
+    .top {
+        transform: rotateX(90deg) translateZ(150px);
+    }
+    .box {
+        width: 300px;
+    }
+    
+    .box div {
+        width: 300px;
+    }
+    .top{
+        width: 300px!important;
+        height: 300px!important;
+    }
+    
+    .box {
+        scale: 1.05;
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 1081px) {
+    .box {
+        scale: 1.2;
+        margin-top: 120px;
+    }
+}

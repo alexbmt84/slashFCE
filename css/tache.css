@@ -1,0 +1,104 @@
+@import url(format.css);
+  
+  html {
+    background: radial-gradient(#FFff55, #FC8823);
+    min-height: 100%;
+    font-family: "hp simplify", sans-serif;
+  }
+  
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #FC8823;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  
+  input[type=text] {
+    padding: 10px 20px;
+    border: 1px solid #C39D78;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  input {
+    font-family: "hp simplify", sans-serif;
+    font-size: 18px;
+    resize: none;
+    margin-left: 5px;
+  }
+
+.btn {
+  color: #FC8823;
+  box-shadow : 0px 3px 3px 0px #d1d1d1;
+  cursor: pointer;
+  margin-bottom: 45px;
+ }
+
+ .button {
+    
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    cursor: pointer;     
+}
+
+ i {
+    font-size: 2.5em;
+ }
+
+.button:hover {
+  background: #FC8823;
+  box-shadow : 0px 1px 2px 0px #d1d1d1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.modal-wrap {
+  max-width: 600px;
+  margin: 50px auto;
+  transition: transform 300ms ease-in-out;
+}
+
+.modal-header span {
+  display: block;
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+}
+
+.modal-bodies {
+  position: relative;
+  perspective: 1000px;
+}
+
+.modal-body {
+  background: white;
+  padding: 40px 50px;
+  box-shadow: 0px 50px 30px -30px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+  position: absolute;
+  top: 0;
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  transform-origin: top left;
+}
+
+.modal-body.is-showing {
+    display: block;
+  }
+

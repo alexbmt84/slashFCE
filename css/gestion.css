@@ -1,0 +1,136 @@
+@import url(format.css);
+  
+.container{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    border: 3px solid #FC8823;
+    margin: 65px auto 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 65px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: dreamland;
+    color: #212121;
+  }
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+table {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    border-style: none;
+    border-collapse: collapse;
+
+}
+
+table tr{
+    height: 40px;
+    border-right: 1px solid #FC8823;
+}
+table tr:first-child{
+    height: 50px;
+    background-color: #FC8823;
+}
+table tr:nth-child(even){
+    background-color: #fffae8;
+}
+
+button {
+    background-color: #FC4a50;
+    height: 30px;
+    width: 50%;
+    border-radius: 50px;
+    border-style: none;
+}
+
+button i{
+    font-size: 1em;
+    color: white;
+    transition: 0.2s;
+}
+button i:hover{
+    font-size: 1.2em;
+    color: white;
+}
+
+.fa-trash-can {
+    cursor: pointer;
+}
+
+/* ******* PopUp de confirmation suppression utilisateurs ******* */
+#confirmation {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    border-radius: 10px;
+    padding: 30px 30px 0px;
+    background: #F2EACC;
+    background-clip: padding-box;
+    font-size: 0.8em;
+    border: 5px solid #FC4a50;
+    box-shadow: 5px 5px 10px black;
+    }
+
+p {
+    margin-bottom: 20px;
+}
+
+.btn-trash {
+    width: 30%;
+    margin: 15px 0px;
+}
+#annuler {
+    position: relative;
+    top: -30px;
+    left: 70%;
+    width: 30%;
+}
+#btn-annuler {
+    color: white;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#btn-trash {
+    color: white;
+    font-size: 1.8em;
+    width: 30%;
+}
+
+/* ***** Fin PopUp de confirmation suppression utilisateurs ***** */
+
+/* ********************** Media-queries ************************* */
+@media (min-width: 768px) {
+    table {
+        font-size: 1.5em;
+    }
+    .container{
+        width: 85%;
+    }
+    #confirmation {
+        left: 40%;
+        }
+}
+
+@media (min-width: 1440px) {
+    table {
+        font-size: 1.5em;
+    }
+    .container{
+        width: 60%;
+    }
+    #confirmation {
+        left: 40%;
+        }
+}
+/* ********************** Fin des media-queries ************************* */

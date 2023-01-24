@@ -1,0 +1,241 @@
+@import url(format.css);
+
+
+body {
+    background-color: #F2EACC;
+    max-width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+form {
+    text-align:center;
+}
+
+.logo {
+    width: 40%;
+    padding-right: 15px;
+    padding-top: 66px;
+}
+
+input {
+    width: 265px;
+    height: 40px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 23px;
+    background-color: #F7F8F9;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.text-input3 {
+    margin-top: 60px;
+}
+
+.text-input1 {
+    margin-top: 20px;
+}
+
+.divtitle2 {
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 39px;
+    padding-top: 40px;
+}
+
+.title2 {
+    font-size: 39px;
+    padding-top: 120px;
+    padding-right: 10px;
+}
+
+#title2 {
+    font-size: 39px;
+    padding-top: 80px;
+}
+
+.btn-input {
+    width: 270px;
+    height: 40px;
+    background-color: #FC4A50;
+    color: white;
+    font-size: 17px;
+    font-family: hp simplify;
+    border-style: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.btn { 
+        width: 270px;
+        height: 40px;
+        background-color: #FC4A50;
+        color: white;
+        font-size: 17px;
+        font-family: hp simplify;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 30px;
+        text-align: center;
+}
+
+.btn_verifier { 
+    width: 270px;
+    height: 40px;
+    background-color: #FC4A50;
+    color: white;
+    font-size: 17px;
+    font-family: hp simplify;
+    border-style: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+#btn {
+    width: 270px;
+        height: 40px;
+        background-color: #FC4A50;
+        color: white;
+        font-size: 17px;
+        font-family: hp simplify;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 30px;
+        text-align: center;
+        padding-right: 5px ;
+}
+
+.p2 {
+    font-size: 22px;
+    padding-top: 60px;
+}
+
+.icons {
+    width: 70%;
+    padding-top: 60px;
+}
+
+.p3 {
+    padding-top: 75px;
+    font-family: hp simplify;
+    color: #8391A1;
+    font-size: 14px;
+}
+
+#p3 {
+    padding-top: 75px;
+    font-family: hp simplify;
+    color: #8391A1;
+    font-size: 14px; 
+}
+
+.p4 {
+    font-family: hp simplify;
+    color: #8391A1;
+    font-size: 15px;
+    padding-top: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.p5 {
+    font-family: hp simplify;
+    color: #8391A1;
+    font-size: 14px;
+    padding-top: 330px;
+
+} 
+
+.p3 {
+    padding-top: 75px;
+    font-family: hp simplify;
+    color: #8391A1;
+    font-size: 14px;
+}
+
+.p6 {
+    padding-top: 135px;
+    font-family: hp simplify;
+    color: #8391A1;
+    font-size: 14px;
+}
+
+span {
+    font-family: hp simplify;
+    color: #FC4A50;
+    font-size: 14px;
+}
+
+.coderecu {
+    width: 310px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.inputcode {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: 2px solid #FC4A50;
+    color: black;
+    background-color: #F7F8F9;
+    font-size: 28px;
+    font-family: summer font ;
+    margin-top: 10px;
+    margin-left: 18px;
+    text-align: center;
+}
+
+.verif {
+    width: 265px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input_newpassword {
+    width: 265px;
+    height: 40px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 23px;
+    background-color: #F7F8F9;
+    margin-top: 30px;
+    padding-left: 10px;
+
+}
+
+.success {
+    padding-top: 160px;
+}
+
+.graphContainer {
+    margin-top: 20px;
+    width: 350px;
+    height: 166px;
+    border-radius: 25px;
+    background-color: #FC4A50;
+}
+
+.dough {
+    width: 50%;
+}

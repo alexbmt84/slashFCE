@@ -1,0 +1,674 @@
+@import url(format.css);
+
+body {
+  height: 100vh; 
+  background-color: #f2eacc;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display:none !important;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+main {
+  margin-top: -160px;
+  width: 100%;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#restorePass {
+  margin: 0px;
+  flex-direction: column;
+}
+
+.frm-gap {
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+a {
+  display:none;
+}
+
+h1, p {
+  margin: 0;
+}
+
+/*******************************************************************  ANIMATION POLYGON  *****************************************************************/
+
+.pentagon-img {
+  width: 40%;
+  position: relative;
+  z-index: 1;
+  top: 15px;
+  left: 175px;
+  transform: rotateZ(44deg);
+}
+
+.connectlink {
+  width: 290px;
+  height: 290px;
+  top:30%;
+  left: 7%;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.scene-polygon {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: 100px;
+  scale: 0.8;
+  display: flex;
+
+}
+
+.pol-wrap {
+  height: inherit;
+  perspective: 35rem;
+  perspective-origin: 50% 50%;
+  position: absolute;
+  left: 50%;
+}
+
+.pol-dodecahedron {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 20s infinite;
+  -webkit-animation: spin 20s infinite;
+  -moz-animation: spin 20s infinite;
+}
+
+.pol-dodecahedron, .pol-pentagon, .pol-pentagon-inner, .pol-pentagon-inner::before {
+  top: 50%;
+  left: 50%;
+  margin: -10em;
+  width: 20em;
+  height: 20em;
+}
+
+.pol-pentagon, .pol-pentagon-inner, .pol-pentagon-inner::before {
+  position: absolute;
+  overflow: hidden;
+}
+
+.pol-pentagon:nth-child(1) {
+  opacity: 1;
+  transform: scaleY(-1) translateY(8.50651em) rotateY(1.88496rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(1) .pol-pentagon-inner::before {
+  animation: color1 3s infinite alternate linear;
+  -webkit-animation: color1 3s infinite alternate linear;
+  -moz-animation: color1 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(2) {
+  opacity: 1;
+  transform: scaleY(-1) translateY(8.50651em) rotateY(3.14159rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(2) .pol-pentagon-inner::before {
+  animation: color2 3s infinite alternate linear;
+  -webkit-animation: color2 3s infinite alternate linear;
+  -moz-animation: color2 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(3) {
+  opacity: 1;
+  transform: scaleY(-1) translateY(8.50651em) rotateY(4.39823rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(3) .pol-pentagon-inner::before {
+  animation: color3 3s infinite alternate linear;
+  -webkit-animation: color3 3s infinite alternate linear;
+  -moz-animation: color3 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(4) {
+  opacity: 1;
+  transform: scaleY(-1) translateY(8.50651em) rotateY(5.65487rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(4) .pol-pentagon-inner::before {
+  animation: color4 3s infinite alternate linear;
+  -webkit-animation: color4 3s infinite alternate linear;
+  -moz-animation: color4 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(5) {
+  opacity: 1;
+  transform: scaleY(-1) translateY(8.50651em) rotateY(6.9115rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(5) .pol-pentagon-inner::before {
+  animation: color5 3s infinite alternate linear;
+  -webkit-animation: color5 3s infinite alternate linear;
+  -moz-animation: color5 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(6) {
+  opacity: 1;
+  transform: scaleY(-1) translateY(8.50651em) rotateX(1.5708rad) scaleY(-1) translateY(5.25731em) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(6) .pol-pentagon-inner::before {
+  animation: color6 3s infinite alternate linear;
+  -webkit-animation: color6 3s infinite alternate linear;
+  -moz-animation: color6 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(7) {
+  opacity: 1;
+  transform: translateY(8.50651em) rotateY(10.0531rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(7) .pol-pentagon-inner::before {
+  animation: color7 3s infinite alternate linear;
+  -webkit-animation: color7 3s infinite alternate linear;
+  -moz-animation: color7 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(8) {
+  opacity: 1;
+  transform: translateY(8.50651em) rotateY(11.30973rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(8) .pol-pentagon-inner::before {
+  animation: color8 3s infinite alternate linear;
+  -webkit-animation: color8 3s infinite alternate linear;
+  -moz-animation: color8 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(9) {
+  transform: translateY(8.50651em) rotateY(12.56637rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(9) .pol-pentagon-inner::before {
+  animation: color9 3s infinite alternate linear;
+  -webkit-animation: color9 3s infinite alternate linear;
+  -moz-animation: color9 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(10) {
+  opacity: 1;
+  transform: translateY(8.50651em) rotateY(13.82301rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(10) .pol-pentagon-inner::before {
+  animation: color10 3s infinite alternate linear;
+  -webkit-animation: color10 3s infinite alternate linear;
+  -moz-animation: color10 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(11) {
+  opacity: 1;
+  transform: translateY(8.50651em) rotateY(15.07964rad) translateZ(5.25731em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(11) .pol-pentagon-inner::before {
+  animation: color11 3s infinite alternate linear;
+  -webkit-animation: color11 3s infinite alternate linear;
+  -moz-animation: color11 3s infinite alternate linear;
+}
+
+.pol-pentagon:nth-child(12) {
+  opacity: 1;
+  transform: translateY(8.50651em) rotateX(1.5708rad) translateY(5.25731em) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+}
+
+.pol-pentagon:nth-child(12) .pol-pentagon-inner::before {
+  animation: color12 3s infinite alternate linear;
+  -webkit-animation: color12 3s infinite alternate linear;
+  -moz-animation: color12 3s infinite alternate linear;
+}
+
+.pol-pentagon-inner {
+  transform: scaleY(1.05146) skewX(-0.31416rad) rotate(0.62832rad) translateY(-7.26543em) rotate(0.31416rad) skewY(0.94248rad) scaleX(0.58779);
+}
+
+.pol-pentagon-inner:before {
+  content: "";
+  transform: scaleX(1.7013) skewY(-0.94248rad) rotate(-0.31416rad) translateY(-2.73457em);
+}
+
+@keyframes color1 {
+  0% {
+      background: #5daef9;
+  }
+  
+  100% {
+      background: #1d75c8;
+  }
+}
+
+@keyframes color2 {
+  0% {
+      background: #ff4e54;
+  }
+  100% {
+      background: #d34044;
+  }
+}
+
+@keyframes color3 {
+
+  0% {
+      background: #de9453;
+  }
+  100% {
+      background: #d1721f;
+  }
+}
+
+@keyframes color4 {
+  0% {
+      background: #48dd48;
+  }
+  100% {
+      background: #29c129;
+  }
+}
+
+@keyframes color5 {
+  0% {
+      background: #5daef9;
+  }
+  100% {
+      background: #1d75c8;
+  }
+}
+
+@keyframes color6 {
+  0% {
+      background: #fffc2f;
+  }
+  100% {
+      background: #d0cd0b;
+  }
+}
+
+@keyframes color7 {
+  0% {
+      background: #fffc2e;
+  }
+  100% {
+      background: #cac70d;
+  }
+}
+
+@keyframes color8 {
+
+  0% {
+      background: #ff5b61;
+  }
+  
+  100% {
+      background: #e94a4a;
+  }
+}
+
+@keyframes color9 {
+    0% {
+        background: white;
+    }
+    100% {
+      background: white;
+    }
+}
+
+@keyframes color10 {
+  0% {
+      background: #ff9a43;
+  }
+  100% {
+      background: #d8741d;
+  }
+}
+
+@keyframes color11 {
+  0% {
+      background: #fc6469;
+  }
+  100% {
+      background: #da3e44;
+  }
+}
+
+@keyframes color12 {
+  0% {
+      background: #49ff49;
+  }
+  100% {
+      background: #25bc25;
+  }
+}
+
+ @-moz-keyframes color1 {
+  0% {
+      background: #5daef9;
+  }
+  100% {
+      background: #1d75c8;
+  }
+}
+
+@-moz-keyframes color2 {
+  0% {
+      background: #ff4e54;
+  }
+  100% {
+      background: #d34044;
+  }
+}
+
+@-moz-keyframes color3 {
+  0% {
+      background: #de9453;
+  }
+  100% {
+      background: #d1721f;
+  }
+}
+
+@-moz-keyframes color4 {
+  0% {
+      background: #48dd48;
+  }
+  100% {
+      background: #29c129;
+  }
+}
+
+@-moz-keyframes color5 {
+  0% {
+      background: #5daef9;
+  }
+  100% {
+      background: #1d75c8;
+  }
+}
+
+@-moz-keyframes color6 {
+  0% {
+      background: #fffc2f;
+  }
+  100% {
+      background: #d0cd0b;
+  }
+}
+
+@-moz-keyframes color7 {
+  0% {
+      background: #fffc2e;
+  }
+  100% {
+      background: #cac70d;
+  }
+}
+
+@-moz-keyframes color8 {
+  0% {
+      background: #ff5b61;
+  }
+  100% {
+      background: #e94a4a;
+  }
+}
+
+@-moz-keyframes color9 {
+    0% {
+        background: white;
+    }
+    100% {
+      background: white;
+    }
+}
+
+@-moz-keyframes color10 {
+  0% {
+      background: #ff9a43;
+  }
+  100% {
+      background: #d8741d;
+  }
+}
+
+@-moz-keyframes color11 {
+  0% {
+      background: #fc6469;
+  }
+  100% {
+      background: #da3e44;
+  }
+}
+
+@-moz-keyframes color12 {
+  0% {
+      background: #49ff49;
+  }
+  100% {
+      background: #25bc25;
+  }
+}
+
+@-webkit-keyframes color1 {
+  0% {
+      background: #5daef9;
+  }
+  100% {
+      background: #1d75c8;
+  }
+}
+
+@-webkit-keyframes color2 {
+  0% {
+      background: #ff4e54;
+  }
+  100% {
+      background: #d34044;
+  }
+}
+
+@-webkit-keyframes color3 {
+  0% {
+      background: #de9453;
+  }
+  100% {
+      background: #d1721f;
+  }
+}
+
+@-webkit-keyframes color4 {
+  0% {
+      background: #48dd48;
+  }
+  100% {
+      background: #29c129;
+  }
+}
+
+@-webkit-keyframes color5 {
+  0% {
+      background: #5daef9;
+  }
+  100% {
+      background: #1d75c8;
+  }
+}
+
+@-webkit-keyframes color6 {
+  0% {
+      background: #fffc2f;
+  }
+  100% {
+      background: #d0cd0b;
+  }
+}
+
+@-webkit-keyframes color7 {
+  0% {
+      background: #fffc2e;
+  }
+  100% {
+      background: #cac70d;
+  }
+}
+
+@-webkit-keyframes color8 {
+  0% {
+      background: #ff5b61;
+  }
+  100% {
+      background: #e94a4a;
+  }
+}
+
+@-webkit-keyframes color9 {
+    0% {
+        background: white;
+    }
+    100% {
+      background: white;
+    }
+}
+
+@-webkit-keyframes color10 {
+  0% {
+      background: #ff9a43;
+  }
+  100% {
+      background: #d8741d;
+  }
+}
+
+@-webkit-keyframes color11 {
+  0% {
+      background: #fc6469;
+  }
+  100% {
+      background: #da3e44;
+  }
+}
+
+@-webkit-keyframes color12 {
+  0% {
+      background: #49ff49;
+  }
+  100% {
+      background: #25bc25;
+  }
+}
+
+
+@keyframes spin {
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(-360deg);
+  }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotateX(360deg) rotateY(360deg) rotateZ(-360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(-360deg);
+    }
+}
+
+@media (min-width: 768px){
+  .logo{
+    display: block !important;
+    margin-right: 10px;
+    width: 50%;
+  }
+  
+  .scene-polygon {
+    top: 50% !important;
+  }
+
+  img {
+      width:50%;
+  }
+
+  .logo{
+      width: 25%;
+  }
+
+  h2{
+      font-size: 3em;
+  }
+
+  p{
+      font-size: 2.2em;
+  }
+
+  main{
+      margin-top: -180px;
+      width: 100%;
+  }
+}
+
+@media (min-width: 1080px){
+  .logo{
+      width: 20%;
+  }
+
+  main{
+      margin-top: -160px;
+      width: 100%;
+  }
+}
+
+@media (min-width: 1133px){
+  h2{
+      font-size: 4.5em;
+  }
+
+  .logo{
+      width: 10%;
+  }
+
+  p{
+      font-size: 2.8em;
+  }
+
+  main{
+      margin-top: -160px;
+      width: 100%;
+  }
+
+  img {
+      width:30%;
+  }
+}
